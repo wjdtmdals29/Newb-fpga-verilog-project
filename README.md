@@ -4,6 +4,7 @@ verilog project
 ---CNN lenet5 using verilog---
 This project is a model that implements Lenet-5 using verilog.
 This model is a lightweight model with the following structure, and the accuracy is 93%.
+
         input size = 28x28
         Convolution1 size = 1x5x5x3
         Convolution2 size = 3x5x5x3
