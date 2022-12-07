@@ -19,7 +19,7 @@ module lenet5_tb;
 	wire w_rst;
 	
 	//assign w_bias = r_bias;
-	parameter clkp = 2;
+	parameter clkp = 10; //100Mhz
 
 	lenet5 u_lenet5
 	(
