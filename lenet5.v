@@ -85,7 +85,7 @@ module lenet5
   		.o_result(w_result1)
 	);
 	//The simulation results are the same whether you use all the buffer which under this code or not
-	buffer #(.BW(CO1*O_BW1),.SIZE(I_SIZE2)) u_buffer_conv1_out
+	buffer #(.BW(CO1*O_BW1),.SIZE(I_SIZE1*I_SIZE1)) u_buffer_conv1_out
 	(	
 		.clk(clk), .global_rst_n(global_rst_n), .rst(rst),
     	.i_data(w_result1), .i_signal(w_valid_max1),
@@ -108,7 +108,7 @@ module lenet5
 		.o_valid_max(w_valid_max2), .o_end_max(w_end_max2),
   		.o_result(w_result2)
 	);
-	buffer #(.BW(CO2*O_BW2),.SIZE(I_SIZE3)) u_buffer_conv2_out
+	buffer #(.BW(CO2*O_BW2),.SIZE(I_SIZE2*I_SIZE2)) u_buffer_conv2_out
 	(	
 		.clk(clk), .global_rst_n(global_rst_n), .rst(rst),
     	.i_data(w_result2), .i_signal(w_valid_max2),
