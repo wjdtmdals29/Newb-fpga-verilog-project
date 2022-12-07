@@ -3,7 +3,7 @@ Author: SeungminJeong(newb)(Department of Electrical Engineering, Kwanwoon Unive
 Associated Filename: lenet5.v
 Purpose: verilog code to lenet5
 Introduction : 28x28x1 input -> 5x5x3 conv1 -> 24x24x3 out -> Relu -> Max -> 14x14x3 -> 3x5x5x3 conv2 -> 8x8x3 out -> Relu -> Max -> 4x4x3 -> 48x10 FC layer -> 0-9 out
-License : https://github.com/matbi86/matbi_fpga_season_1/blob/main/LICENSE
+https://github.com/wjdtmdals29/Newb-fpga-verilog-project.git
 *******************************************************************************/
 
 `timescale 1ns / 1ps
